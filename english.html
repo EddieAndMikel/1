@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>English in India</title>
+
+<style>
+
+header {
+
+position: fixed;
+
+top: 0;
+
+width: 100%;
+
+background-color: rgba(255, 255, 255, 0.9);
+
+backdrop-filter: blur(10px);
+
+z-index: 1000;
+
+padding: 15px;
+
+text-align: center;
+
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+body {
+
+padding-top: 80px;
+
+margin: 0;
+
+font-family: 'Segoe UI', Arial, sans-serif;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+min-height: 100vh;
+
+flex-direction: column;
+
+background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+
+}
+
+input[type="search"] {
+
+margin: 10px;
+
+padding: 10px;
+
+width: 80%;
+
+max-width: 400px;
+
+border: 2px solid #007bff;
+
+border-radius: 25px;
+
+font-size: 16px;
+
+outline: none;
+
+transition: border-color 0.3s ease;
+
+}
+
+input[type="search"]:focus {
+
+border-color: #0056b3;
+
+}
+
+.frame {
+
+position: fixed;
+
+top: 50%;
+
+left: 50%;
+
+transform: translate(-50%, -50%);
+
+width: 70%;
+
+height: 68%;
+
+border: none;
+
+border-radius: 15px;
+
+background-color: white;
+
+z-index: 1000;
+
+display: none;
+
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.hello {
+
+position: fixed;
+
+bottom: 3.34cm;
+
+right: 20px;
+
+width: 100px;
+
+height: 11cm;
+
+color: white;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+border-radius: 15px;
+
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+
+z-index: 1000;
+
+font-size: 0.89cm;
+
+cursor: pointer;
+
+background-image: url(ppppppppp.jpg);
+
+background-position: center;
+
+background-repeat: no-repeat;
+
+background-size: cover;
+
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.hello:hover {
+
+transform: scale(1.05);
+
+box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+
+}
+
+.fixed-bottom-right {
+
+position: fixed;
+
+bottom: 20px;
+
+right: 20px;
+
+width: 100px;
+
+height: 100px;
+
+background-color: #007bff;
+
+color: black;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+border-radius: 15px;
+
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+
+z-index: 1000;
+
+background-size: cover;
+
+background-image: url(robot.jpg);
+
+background-repeat: no-repeat;
+
+font-size: 1cm;
+
+cursor: pointer;
+
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.fixed-bottom-right:hover {
+
+transform: scale(1.05);
+
+box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+
+}
+
+div {
+
+border: 2px solid #007bff;
+
+border-radius: 15px;
+
+padding: 25px;
+
+background-color: white;
+
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+width: 90%;
+
+max-width: 26cm;
+
+margin: 20px auto;
+
+text-align: center;
+
+transition: box-shadow 0.3s ease;
+
+}
+
+div:hover {
+
+box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+
+}
+
+.language {
+
+
+height: 40px;
+
+width: 70px;
+
+border: none;
+
+border-radius: 50%;
+
+cursor: pointer;
+
+
+opacity: 0.8;
+
+position: fixed;
+
+top: 0.72cm;
+
+z-index: 1001;
+
+right: 10.5cm;
+
+}
+
+.download{
+
+top: 1cm;
+
+right: 2cm;
+
+z-index: 1004;
+
+height: 40px;
+
+width: 40px;
+
+border: none;
+
+border-radius: 50%;
+
+cursor: pointer;
+
+transition: transform 0.3s ease;
+
+opacity: 0.8;
+
+background-color: transparent;
+
+position: fixed;
+font-size: 0.5cm;
+
+}
+
+.ss{
+    top: 0.7cm;
+
+right: 4cm;
+
+z-index: 1004;
+
+height: 50px;
+
+width: 80px;
+
+border-radius: 50%;
+
+cursor: pointer;
+
+position: fixed;
+font-size: 0.5cm;
+background-image: url(notpngkl.png);
+background-position: center;
+
+}
+#light{
+    color:white;
+    border-color: white;
+    background-image: url(png.png);
+}
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
+.koo{
+
+font-size: 1cm;
+
+position: fixed;
+
+top: -0.5cm;
+
+z-index: 1001;
+
+right: 7cm;
+
+}
+.ooo{
+  top: 0.3cm;
+  left: 1cm;
+  z-index: 10009;
+  
+position: fixed;
+}
+.aaa{
+  top: 1.2cm;
+  left: 1.4cm;
+  z-index: 10009;
+  
+position: fixed;
+}
+
+@media (max-width: 768px) {
+
+.hello {
+
+bottom: 20px;
+
+height: 8cm;
+
+font-size: 0.7cm;
+
+}
+
+.fixed-bottom-right {
+
+width: 80px;
+
+height: 80px;
+
+font-size: 0.8cm;
+
+}
+
+div {
+
+width: 95%;
+
+padding: 15px;
+
+}
+
+}
+
+@media (max-width: 480px) {
+
+.hello {
+
+width: 80px;
+
+height: 6cm;
+
+font-size: 0.6cm;
+
+}
+
+.fixed-bottom-right {
+
+width: 60px;
+
+height: 60px;
+
+font-size: 0.6cm;
+
+}
+
+div {
+
+width: 100%;
+
+padding: 10px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header id="0">
+<span class="aaa" id="sd">2</span>
+<input type="search" placeholder="Search...">
+<div class="frame"></div>
+</header>
+<p class="ooo" id="hj">0</p>
+<p class="koo" id="hahaha"></p><button class="download" id="d" onclick="downloadCurrentPage()">Download</button>
+<button onclick="darkmode()" id="dark" class="ss" > </button>
+<button onclick="light()" id="light" class="ss" style="display: none;"></button>
+<div class="english" id="aa">
+   <h1>Intro</h1>
+  <p>English is a wiELTdely spoken language today. It has often been referred to as a 'global language', the lingua franca of the modern era, and currently the language most often taught as a second language around the world. English in India is used not only for communicating with the outside world but also for inter-state and intrastate communication. Because of the great ethnic and linguistic diversity found within our nation, English acts as an indispensable 'link' language. With the Information Technology revolution and most software and operating systems being developed in the English language, a new utility for written and oral communication in the English language has emerged. English is said to be the world's most important language having communicative and educative value. English is used all over the world not out of any imposition but because of the realization that it has certain advantages.<br><br>Indian languages in their conversations. Indians abruptly move to speak their conversations. English among Indians who speak different languages is important in some systems, educational and business in India. Foreign movies in India weren't dubbed in Indian languages but were broadcast in English for English speakers only. The reason for the prominence of English is related to the fact that when the British started ruling, they needed mediators who could help them communicate. They turned to high-caste Indians, especially the Brahmins. The policy was to create an Indian class that was Indian in color but English in taste, in opinion, in morals, and in intellect. The British also established educational institutions modeled on British universities, with an emphasis on English education. Missionaries came to India and started primary-level education for Indians, which further spread the use of English.</p>
+  <h1>History</h1>
+  <p>The link between Britain and India is an old one, starting around the time of the formation of the East India Company in 1600. The British came initially seeking business opportunities in a wealthy country. Later, they gained control of different regions through alliances, battles, and treaties. Educational efforts commenced with setting up individual schools and progressed to actually implementing formal policies. This was a process that evolved over a period of 150 years. Necessarily, though not without resistance, this involved the spread and growth of English in a territory that had a vast population speaking hundreds of languages, with many having a formal history of at least two thousand years.<br><br>
+
+    The most significant linguistic policy initiative of the British was Thomas Babington Macaulay’s Minute of 1835, which led to the establishment of English as the language of instruction for higher education. This momentous decision paved the way for the eventual entrenchment of English in the country. The proposal met with fierce opposition from a group of highly-placed British officials and Indians. In the end, though, Macaulay prevailed. As a consequence, Indians were rapidly exposed to western ideas, science, law, governance, and, of course, English. By 1857, universities were being set up in the three Presidencies:  Bengal, Bombay, and Madras. In 1854, with Sir Charles Wood’s Despatch, school education also benefitted, although the focus was not only on English; the local languages were also given due importance. Macaulay created a job market for people who learned English, with the aim of meeting the administrative needs of the British; this same skill is now the gateway for Indians to compete for the best jobs, globally.</p>
+<h2 id="pro">Proof</h2>
+<span id="proof">Indian Constitution: The Constitution of India designates Hindi in the Devanagari script as the official language of the Union, but English is also accorded official status. According to Article 343, English was to continue as an official language alongside Hindi for a period of 15 years from the adoption of the Constitution (1950). However, the Official Languages Act of 1963 allowed for the continued use of English indefinitely, ensuring its official status.</span>  <select id="languageSelect" class="language" onchange="changeLanguage()">
+    <option value="english">English</option>
+    <option value="arabic">Arabic</option>
+    <option value="french">French</option>
+    <option value="indian">Indian</option>
+  </select>
+</div>
+
+<button class="fixed-bottom-right" onclick="toggleIframe()">Use AI</button>
+
+<button class="hello" onclick="powerpoint('url.pptx')">
+    P<br>O<br>W<br>E<br>R<br>-<br>P<br>O<br>I<br>N<br>T
+  </button>
+
+<script>
+const searchInput = document.querySelector('input[type="search"]');
+const paragraphs = document.querySelectorAll('p');
+const contentDiv = document.querySelector('.english');
+
+const languages = {
+  "english": {
+    "title": "History",
+    "content": [
+      "Although Europeans were present in South Asia as traders from the beginning of the seventeenth century, it was not until the middle of the eighteenth century that the British established rule in the region. As Mughal control waned in the eighteenth century, British power expanded. After the Battle of Plassey in 1757, the British were ceded control of the province of Bengal. By 1857, the time of the First War of Indian Independence (or, as it was known to the British at the time, the 'Mutiny'), the British were poised to take control from Mughal hands permanently. Nearly two-fifths of the area, however, was left in the hands of quasi-independent rulers, who nonetheless were forced to contend with British power at the center."
+    ]
+  },
+  "arabic": {
+    "title": "التاريخ",
+    "content": [
+      "الرابط بين بريطانيا والهند قديم، بدأ حوالي وقت تشكيل شركة الهند الشرقية في عام 1600. جاء البريطانيون في البداية بحثًا عن فرص تجارية في بلد غني. لاحقًا، سيطروا على مناطق مختلفة من خلال التحالفات والمعاهدات. بدأت الجهود التعليمية بإنشاء مدارس فردية وتطورت إلى تنفيذ سياسات رسمية. كانت هذه عملية تطورت على مدى 150 عامًا. بالضرورة، وإن لم يكن دون مقاومة، شمل ذلك انتشار ونمو اللغة الإنجليزية في إقليم كان به عدد هائل من السكان يتحدثون مئات اللغات، العديد منها له تاريخ رسمي لا يقل عن ألفي عام.",
+      "كانت أهم مبادرة لغوية بريطانية هي قرار توماس بابينغتون ماكولاي في عام 1835، والذي أدى إلى تأسيس اللغة الإنجليزية كلغة تعليم في التعليم العالي. مهد هذا القرار الطريق لترسيخ اللغة الإنجليزية في البلاد. واجه الاقتراح معارضة شديدة من مجموعة من المسؤولين البريطانيين والهنود. في النهاية، انتصر ماكولاي. ونتيجة لذلك، تعرض الهنود بسرعة للأفكار الغربية، العلوم، القانون، الحوكمة، وبالطبع اللغة الإنجليزية. بحلول عام 1857، تم إنشاء جامعات في المحافظات الثلاث: البنغال، بومباي، ومدراس. في عام 1854، مع إرسالية السير تشارلز وود، استفاد التعليم المدرسي أيضًا، على الرغم من أن التركيز لم يكن فقط على اللغة الإنجليزية؛ بل تم إعطاء اللغات المحلية أهمية أيضًا. خلق ماكولاي سوق عمل للأشخاص الذين تعلموا اللغة الإنجليزية، بهدف تلبية الاحتياجات الإدارية للبريطانيين؛ هذه المهارة نفسها أصبحت الآن البوابة للهنود للتنافس على أفضل الوظائف عالميًا."
+    ]
+  },
+  "french": {
+    "title": "Histoire",
+    "content": [
+      "Le lien entre la Grande-Bretagne et l'Inde est ancien, commençant vers l'époque de la formation de la Compagnie des Indes orientales en 1600. Les Britanniques sont venus initialement chercher des opportunités commerciales dans un pays riche. Plus tard, ils ont pris le contrôle de différentes régions par des alliances, des batailles et des traités. Les efforts éducatifs ont commencé par la création d'écoles individuelles et ont progressé vers la mise en œuvre de politiques formelles. Ce fut un processus qui a évolué sur une période de 150 ans. Nécessairement, bien que non sans résistance, cela a impliqué la propagation et la croissance de l'anglais dans un territoire qui avait une vaste population parlant des centaines de langues, dont beaucoup avaient une histoire formelle d'au moins deux mille ans.",
+      "L'initiative linguistique la plus importante des Britanniques a été la Minute de Thomas Babington Macaulay en 1835, qui a conduit à l'établissement de l'anglais comme langue d'enseignement pour l'enseignement supérieur. Cette décision a ouvert la voie à l'enracinement éventuel de l'anglais dans le pays. La proposition a rencontré une opposition féroce de la part d'un groupe de hauts fonctionnaires britanniques et d'Indiens. À la fin, cependant, Macaulay a prévalu. En conséquence, les Indiens ont été rapidement exposés aux idées occidentales, à la science, au droit, à la gouvernance et, bien sûr, à l'anglais. En 1857, des universités ont été créées dans les trois présidences : Bengale, Bombay et Madras. En 1854, avec la Dépêche de Sir Charles Wood, l'éducation scolaire a également bénéficié, bien que l'accent ne soit pas seulement mis sur l'anglais ; les langues locales ont également reçu l'importance qu'elles méritent. Macaulay a créé un marché du travail pour les personnes qui ont appris l'anglais, dans le but de répondre aux besoins administratifs des Britanniques ; cette même compétence est désormais la porte d'entrée pour les Indiens pour rivaliser pour les meilleurs emplois à l'échelle mondiale."
+    ]
+  },
+  "indian": {
+    "title": "इतिहास",
+    "content": [
+      "ब्रिटेन और भारत के बीच का संबंध पुराना है, जो 1600 में ईस्ट इंडिया कंपनी के गठन के समय शुरू हुआ। ब्रिटिश शुरू में एक धनी देश में व्यापारिक अवसरों की तलाश में आए। बाद में, उन्होंने गठबंधन, लड़ाई और संधियों के माध्यम से विभिन्न क्षेत्रों पर नियंत्रण हासिल किया। शैक्षिक प्रयास व्यक्तिगत स्कूलों की स्थापना के साथ शुरू हुए और औपचारिक नीतियों को लागू करने तक विकसित हुए। यह एक ऐसी प्रक्रिया थी जो 150 वर्षों की अवधि में विकसित हुई। आवश्यक रूप से, हालांकि बिना प्रतिरोध के नहीं, इसमें अंग्रेजी का प्रसार और विकास शामिल था, एक ऐसे क्षेत्र में जहां सैकड़ों भाषाएं बोलने वाली विशाल आबादी थी, जिनमें से कई का औपचारिक इतिहास कम से कम दो हज़ार वर्ष पुराना था।",
+      "ब्रिटिशों की सबसे महत्वपूर्ण भाषाई पहल 1835 में थॉमस बैबिंगटन मैकाले का मिनट था, जिसके कारण उच्च शिक्षा के लिए शिक्षा की भाषा के रूप में अंग्रेजी की स्थापना हुई। इस निर्णय ने देश में अंग्रेजी के अंतिम प्रवेश का मार्ग प्रशस्त किया। इस प्रस्ताव का एक समूह उच्च-पदस्थ ब्रिटिश अधिकारियों और भारतीयों के विरोध का सामना करना पड़ा। अंत में, हालांकि, मैकाले की जीत हुई। परिणामस्वरूप, भारतीयों को पश्चिमी विचारों, विज्ञान, कानून, शासन और, निश्चित रूप से, अंग्रेजी से तेजी से अवगत कराया गया। 1857 तक, तीन प्रेसीडेंसी: बंगाल, बॉम्बे और मद्रास में विश्वविद्यालय स्थापित किए जा रहे थे। 1854 में, सर चार्ल्स वुड के डिस्पैच के साथ, स्कूली शिक्षा को भी लाभ हुआ, हालांकि ध्यान केवल अंग्रेजी पर नहीं था; स्थानीय भाषाओं को भी उचित महत्व दिया गया। मैकाले ने अंग्रेजी सीखने वाले लोगों के लिए एक नौकरी बाजार बनाया, जिसका उद्देश्य ब्रिटिशों की प्रशासनिक आवश्यकताओं को पूरा करना था; यही कौशल अब भारतीयों के लिए वैश्विक स्तर पर सर्वोत्तम नौकरियों के लिए प्रतिस्पर्धा करने का प्रवेश द्वार है।"
+    ]
+  },
+  "intro": {
+    "english": {
+      "title": "Intro",
+      "content": [
+        "English is a widely spoken language today. It has often been referred to as a 'global language', the lingua franca of the modern era, and currently the language most often taught as a second language around the world. English in India is used not only for communicating with the outside world but also for inter-state and intrastate communication. Because of the great ethnic and linguistic diversity found within our nation, English acts as an indispensable 'link' language. With the Information Technology revolution and most software and operating systems being developed in the English language, a new utility for written and oral communication in the English language has emerged. English is said to be the world's most important language having communicative and educative value. English is used all over the world not out of any imposition but because of the realization that it has certain advantages.  in India, ELT in the pre-colonial period, colonial period, and post-colonial period.Language has been considered man's most remarkable achievement. Indian languages in their conversations. Indians abruptly move to speak their conversations. English among Indians who speak different languages is important in some systems, educational and business in India. Foreign movies in India weren't dubbed in Indian languages but were broadcast in English for English speakers only. The reason for the prominence of English is related to the fact that when the British started ruling, they needed mediators who could help them communicate. They turned to high-caste Indians, especially the Brahmins. The policy was to create an Indian class that was Indian in color but English in taste, in opinion, in morals, and in intellect. The British also established educational institutions modeled on British universities, with an emphasis on English education. Missionaries came to India and started primary-level education for Indians, which further spread the use of English."
+      ]ELT
+    },
+    "arabic": {
+      "title": "مقدمة",
+      "content": [
+        "الإنجليزية هي لغة واسعة الانتشار اليوم. غالبًا ما يشار إليها كلغة عالمية، لغة التواصل المشترك في العصر الحديث، وهي حاليًا اللغة الأكثر تدريسًا كلغة ثانية حول العالم. تُستخدم الإنجليزية في الهند ليس فقط للتواصل مع العالم الخارجي ولكن أيضًا للتواصل بين الولايات وداخلها. بسبب التنوع العرقي واللغوي الكبير الموجود في بلادنا، تعمل الإنجليزية كلغة ربط لا غنى عنها. مع ثورة تكنولوجيا المعلومات وتطوير معظم البرمجيات وأنظمة التشغيل باللغة الإنجليزية، ظهرت فائدة جديدة للتواصل الكتابي والشفهي باللغة الإنجليزية. يُقال إن الإنجليزية هي أهم لغة في العالم ذات قيمة تواصلية وتعليمية. تُستخدم الإنجليزية في جميع أنحاء العالم ليس بسبب فرضها ولكن بسبب إدراك أنها تتمتع بمزايا معينة. تعليم اللغة الإنجليزية في الهند، في الفترة ما قبل الاستعمار، فترة الاستعمار، وفترة ما بعد الاستعمار. تُعتبر اللغة من أعظم إنجازات الإنسان.اللغات الهندية في محادثاتهم. ينتقل الهنود فجأة للتحدث بلغاتهم. الإنجليزية بين الهنود الذين يتحدثون لغات مختلفة مهمة في بعض الأنظمة التعليمية والتجارية في الهند. لم تكن الأفلام الأجنبية في الهند مدبلجة باللغات الهندية ولكنها كانت تُعرض باللغة الإنجليزية للمتحدثين بالإنجليزية فقط. سبب بروز الإنجليزية مرتبط بحقيقة أنه عندما بدأ البريطانيون في الحكم، احتاجوا إلى وسطاء يمكنهم مساعدتهم في التواصل. لجأوا إلى الهنود من الطبقات العليا، وخاصة البراهمة. كانت السياسة تهدف إلى إنشاء طبقة هندية تكون هندية في اللون ولكن إنجليزية في الذوق، الرأي، الأخلاق، والفكر. كما أنشأ البريطانيون مؤسسات تعليمية على غرار الجامعات البريطانية، مع التركيز على التعليم باللغة الإنجليزية. جاء المبشرون إلى الهند وبدأوا التعليم على مستوى ابتدائي للهنود، مما ساهم في انتشار استخدام الإنجليزية."
+      ]
+    },
+    "french": {
+      "title": "Introduction",
+      "content": [
+        "L'anglais est une langue largement parlée aujourd'hui. Elle est souvent qualifiée de 'langue mondiale', la lingua franca de l'ère moderne, et est actuellement la langue la plus souvent enseignée comme deuxième langue dans le monde. L'anglais en Inde est utilisé non seulement pour communiquer avec le monde extérieur, mais aussi pour la communication inter-étatique et intra-étatique. En raison de la grande diversité ethnique et linguistique présente dans notre nation, l'anglais agit comme une langue de 'liaison' indispensable. Avec la révolution des technologies de l'information et la plupart des logiciels et systèmes d'exploitation développés en anglais, une nouvelle utilité pour la communication écrite et orale en anglais a émergé. L'anglais est considéré comme la langue la plus importante au monde, ayant une valeur communicative et éducative. L'anglais est utilisé dans le monde entier non pas par imposition, mais en raison de la réalisation qu'il présente certains avantages. L'enseignement de l'anglais en Inde, pendant la période précoloniale, coloniale et postcoloniale. La langue a été considérée comme l'exploitation la plus remarquable de l'homme. Les langues indiennes dans leurs conversations. Les Indiens passent brusquement à parler leurs conversations. L'anglais parmi les Indiens qui parlent différentes langues est important dans certains systèmes éducatifs et commerciaux en Inde. Les films étrangers en Inde n'étaient pas doublés en langues indiennes, mais étaient diffusés en anglais uniquement pour les anglophones. La raison de la prédominance de l'anglais est liée au fait que lorsque les Britanniques ont commencé à gouverner, ils avaient besoin de médiateurs pour les aider à communiquer. Ils se sont tournés vers les Indiens de haute caste, en particulier les Brahmanes. La politique était de créer une classe indienne qui était indienne par la couleur mais anglaise par le goût, l'opinion, la morale et l'intellect. Les Britanniques ont également établi des institutions éducatives calquées sur les universités britanniques, avec un accent sur l'éducation en anglais. Les missionnaires sont venus en Inde et ont commencé l'éducation au niveau primaire pour les Indiens, ce qui a encore propagé l'utilisation de l'anglais."
+      ]
+    },
+    "indian": {
+      "title": "परिचय",
+      "content": [
+        "अंग्रेजी आज एक व्यापक रूप से बोली जाने वाली भाषा है। इसे अक्सर 'वैश्विक भाषा' के रूप में जाना जाता है, आधुनिक युग की लिंगुआ फ्रैंका, और वर्तमान में दुनिया भर में दूसरी भाषा के रूप में सबसे अधिक सिखाई जाने वाली भाषा। भारत में अंग्रेजी का उपयोग न केवल बाहरी दुनिया के साथ संवाद करने के लिए बल्कि अंतर-राज्य और अंदरूनी संचार के लिए भी किया जाता है। हमारे राष्ट्र में पाई जाने वाली महान जातीय और भाषाई विविधता के कारण, अंग्रेजी एक अनिवार्य 'लिंक' भाषा के रूप में कार्य करती है। सूचना प्रौद्योगिकी क्रांति और अधिकांश सॉफ्टवेयर और ऑपरेटिंग सिस्टम के अंग्रेजी में विकसित होने के साथ, अंग्रेजी भाषा में लिखित और मौखिक संचार के लिए एक नई उपयोगिता उभरी है। अंग्रेजी को दुनिया की सबसे महत्वपूर्ण भाषा माना जाता है जिसमें संचार और शैक्षिक मूल्य है। अंग्रेजी का उपयोग पूरी दुनिया में किसी भी थोपने के कारण नहीं बल्कि इसके कुछ फायदों को महसूस करने के कारण किया जाता है। भारत में अंग्रेजी भाषा शिक्षण (ELT), पूर्व-औपनिवेशिक काल, औपनिवेशिक काल और उत्तर-औपनिवेशिक काल में। भाषा को मनुष्य की सबसे उल्लेखनीय उपलब्धि माना गया है। भारतीय भाषाएं उनकी बातचीत में। भारतीय अचानक अपनी बातचीत करने के लिए आगे बढ़ते हैं। अलग-अलग भाषाएं बोलने वाले भारतीयों के बीच अंग्रेजी कुछ प्रणालियों, शैक्षिक और व्यावसायिक क्षेत्रों में महत्वपूर्ण है। भारत में विदेशी फिल्में भारतीय भाषाओं में डब नहीं की गई थीं, लेकिन केवल अंग्रेजी बोलने वालों के लिए अंग्रेजी में प्रसारित की गई थीं। अंग्रेजी के प्रमुख होने का कारण इस तथ्य से जुड़ा है कि जब अंग्रेजों ने शासन करना शुरू किया, तो उन्हें मध्यस्थों की आवश्यकता थी जो उन्हें संवाद करने में मदद कर सकें। उन्होंने उच्च जाति के भारतीयों, विशेष रूप से ब्राह्मणों की ओर रुख किया। नीति यह थी कि एक ऐसा भारतीय वर्ग बनाया जाए जो रंग में भारतीय हो लेकिन स्वाद, राय, नैतिकता और बुद्धि में अंग्रेजी हो। अंग्रेजों ने ब्रिटिश विश्वविद्यालयों के मॉडल पर शैक्षणिक संस्थानों की स्थापना की, जिसमें अंग्रेजी शिक्षा पर जोर दिया गया। मिशनरी भारत आए और भारतीयों के लिए प्राथमिक स्तर की शिक्षा शुरू की, जिससे अंग्रेजी का उपयोग और फैल गया।"
+      ]
+    }
+  },"Proof": {
+  "english": {
+    "title": "Proof",
+    "content": [
+      "Indian Constitution: The Constitution of India designates Hindi in the Devanagari script as the official language of the Union, but English is also accorded official status. According to Article 343, English was to continue as an official language alongside Hindi for a period of 15 years from the adoption of the Constitution (1950). However, the Official Languages Act of 1963 allowed for the continued use of English indefinitely, ensuring its official status."
+    ]
+  },
+  "arabic": {
+    "title": "إثبات",
+    "content": [
+      "الدستور الهندي: ينص دستور الهند على أن اللغة الهندية المكتوبة بالخط الديفاناغاري هي اللغة الرسمية للاتحاد، ولكن اللغة الإنجليزية تتمتع أيضًا بوضع رسمي. وفقًا للمادة 343، كان من المقرر أن تستمر اللغة الإنجليزية كلغة رسمية إلى جانب اللغة الهندية لمدة 15 عامًا من اعتماد الدستور (1950). ومع ذلك، سمح قانون اللغات الرسمية لعام 1963 باستخدام اللغة الإنجليزية إلى أجل غير مسمى، مما يضمن وضعها الرسمي."
+    ]
+  },
+  "french": {
+    "title": "Preuve",
+    "content": [
+      "Constitution indienne : La Constitution de l'Inde désigne l'hindi écrit en script Devanagari comme langue officielle de l'Union, mais l'anglais jouit également d'un statut officiel. Selon l'article 343, l'anglais devait continuer comme langue officielle aux côtés de l'hindi pendant une période de 15 ans à partir de l'adoption de la Constitution (1950). Cependant, la Loi sur les langues officielles de 1963 a permis l'utilisation continue de l'anglais indéfiniment, garantissant ainsi son statut officiel."
+    ]
+  },
+  "indian_languages": {
+    "title": "सबूत",
+    "content": [
+      "भारतीय संविधान: भारत का संविधान देवनागरी लिपि में हिंदी को संघ की आधिकारिक भाषा के रूप में निर्दिष्ट करता है, लेकिन अंग्रेजी को भी आधिकारिक दर्जा दिया गया है। अनुच्छेद 343 के अनुसार, संविधान (1950) को अपनाने के 15 वर्षों तक अंग्रेजी को हिंदी के साथ आधिकारिक भाषा के रूप में जारी रखना था। हालांकि, 1963 के आधिकारिक भाषा अधिनियम ने अंग्रेजी के अनिश्चित काल तक उपयोग की अनुमति दी, जिससे इसका आधिकारिक दर्जा सुनिश्चित हुआ।"
+    ]
+  }
+}
+};
+function darkmode(){
+    document.getElementById('aa').style.backgroundColor = "black";
+    document.getElementById('aa').style.color = "rgba(201, 206, 176, 0.705)";
+    document.getElementById('dark').style.display='none';
+    document.body.style.background = "linear-gradient(135deg, gray, black)";
+    document.getElementById("0").style.backgroundColor='black';
+    document.getElementById("hahaha").style.color="white";
+    document.getElementById('d').style.color='white';
+    document.getElementById('light').style.display="block";
+    document.getElementById('languageSelect').backgroundColor='black';
+    document.getElementById('languageSelect').color='white';
+    document.getElementById('sd').style.color='rgba(201, 206, 176, 0.705)';
+    document.getElementById('hj').style.color='rgba(201, 206, 176, 0.705)';
+}
+function light(){
+    document.getElementById('aa').style.backgroundColor = "white";
+    document.getElementById('aa').style.color = "black";
+    document.getElementById('dark').style.display='block';
+    document.body.style.background = "linear-gradient(135deg, #f5f7fa, #c3cfe2)";
+    document.getElementById("0").style.backgroundColor='white';
+    document.getElementById("hahaha").style.color="black";
+    document.getElementById('d').style.color='black';
+    document.getElementById('light').style.display="none";
+    document.getElementById('languageSelect').backgroundColor='white';
+    document.getElementById('languageSelect').color='black';
+    document.getElementById('sd').style.color='black';
+    document.getElementById('hj').style.color='black';
+}
+function highlightText(text, query) {
+  if (!query) return text;
+  const regex = new RegExp(`(${query})`, 'gi');
+  return text.replace(regex, '<span class="highlight">$1</span>');
+}
+function update() {
+  let date = new Date();
+  let y = date.getHours();
+  let x=date.getMinutes();
+  let z=date.getSeconds();
+  let b="am";
+  if(y>12){
+    y+=-12;
+    b="pm";
+  }
+  let a=`${y}:${x}:${z} ${b}`;
+  document.getElementById('hj').innerHTML = a;
+  setTimeout(update, 1000);
+}
+function update2() {
+  let date = new Date();
+  let y = date.getDate();
+  let x=date.getMonth();
+  let z=date.getFullYear();
+  let b="am";
+  let a=`${y}/${x}/${z}`;
+  document.getElementById('sd').innerHTML = a;
+  setTimeout(update, 1000);
+}
+
+update();
+update2();
+searchInput.addEventListener('input', function () {
+  const query = searchInput.value.toLowerCase().trim();
+  const elementsToHighlight = document.querySelectorAll('p, span#proof');
+  
+  elementsToHighlight.forEach(element => {
+    const originalText = element.dataset.originalText || element.textContent;
+    element.dataset.originalText = originalText;
+    if (query === '') {
+      element.innerHTML = originalText;
+      element.style.display = 'block';
+    } else {
+      const highlightedText = highlightText(originalText, query);
+      element.innerHTML = highlightedText;
+      element.style.display = originalText.toLowerCase().includes(query) ? 'block' : 'none';
+    }
+  });
+});
+
+function toggleIframe() {
+  let frame = document.getElementById('botFrame');
+  if (!frame) {
+    frame = document.createElement('iframe');
+    frame.id = 'botFrame';
+    frame.src = 'bot.html';
+    frame.className = 'frame';
+    document.body.appendChild(frame);
+  }
+  frame.style.display = frame.style.display === 'none' ? 'block' : 'none';
+}
+let iframe = null; 
+
+function powerpoint(url) {
+  if (iframe) {
+    iframe.style.display = iframe.style.display === 'none' ;
+  } else {
+    iframe = document.createElement('iframe');
+    iframe.src = "url.pptx"; 
+    iframe.width = '100%';
+    iframe.height = '500px';
+    iframe.frameBorder = '0';
+    iframe.allowFullscreen = true;
+    iframe.className = 'frame';
+    iframe.style.display = 'none'; 
+    document.body.appendChild(iframe);
+  }
+}
+function downloadBotHTML() {
+  // The HTML content with proper escaping
+  const content = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vexetorix Chat</title>
+  <link rel="icon" href="hord.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #3f51b5, #1a237e);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #333;
+    }
+    .chat-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 600px;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .chat-container:hover {
+      transform: scale(1.02);
+    }
+    .chatbox {
+      padding: 20px;
+      overflow-y: auto;
+      background: #f7f8fa;
+      flex-grow: 1;
+      max-height: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .chat-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .chat {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 12px 16px;
+      border-radius: 12px;
+      max-width: 80%;
+      word-wrap: break-word;
+      line-height: 1.5;
+      font-size: 14px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .chat .role {
+      font-weight: 600;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #666;
+    }
+    .chat .timestamp {
+      font-size: 10px;
+      color: #999;
+      margin-top: 4px;
+    }
+    .chat.user {
+      align-self: flex-end;
+      background: linear-gradient(135deg, #3f51b5, #1a237e);
+      color: #fff;
+    }
+    .chat.user .role {
+      color: #e0e0e0;
+    }
+    .chat.user .timestamp {
+      color: #e0e0e0;
+    }
+    .chat.bot {
+      align-self: flex-start;
+      background: linear-gradient(135deg, #ffffff, #f1f1f1);
+      color: #333;
+      border: 1px solid #e0e0e0;
+    }
+    .chat.bot .role {
+      color: #3f51b5;
+    }
+    .chat.code {
+      background: #272822;
+      color: #f8f8f2;
+      font-family: 'Courier New', monospace;
+      padding: 12px;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-size: 13px;
+    }
+    .chat.code pre {
+      margin: 0;
+    }
+    .chat-input {
+      display: flex;
+      align-items: center;
+      padding: 16px;
+      background: #fff;
+      border-top: 1px solid #e0e0e0;
+      justify-content: space-between;
+    }
+    .chat-input textarea {
+      width: 100%;
+      resize: none;
+      border: none;
+      outline: none;
+      padding: 12px 16px;
+      border-radius: 12px;
+      background: #f1f1f1;
+      font-size: 14px;
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+    .chat-input textarea:focus {
+      background: #fff;
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+    }
+    .chat-input textarea::placeholder {
+      color: #999;
+    }
+    .send-btn {
+      font-size: 24px;
+      color: #3f51b5;
+      cursor: pointer;
+      transition: color 0.3s ease, transform 0.2s ease;
+      margin-left: 12px;
+    }
+    .send-btn:hover {
+      color: #1a237e;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chatbox">
+      <ul class="chat-list"></ul>
+    </div>
+    <div class="chat-input">
+      <textarea placeholder="Type your message..."></textarea>
+      <span class="send-btn material-symbols-outlined">send</span>
+    </div>
+  </div>
+  <script>
+   let a2="sk";
+      let b2="-proj" ;
+      let c2="-vF0rt7QAPD9CRIA264i0SpP0P98Sntd9rHDTJNPBM19Xp-gfEYWdFk7Qd88symWJCbfQ1VmJJBT3BlbkFJGd7gPiFGjT_srLmicErZlzu-FUJpkxQu6BXnXZ0OERZzUldPHJP40Yc9oaDqgLNzy-uTeOW8UA";
+       
+    const API_KEY = a2 + b2 + c2;
+    let conversationHistory = [];
+    const escapeHtml = (unsafe) => {
+      return unsafe.replace(/&/g, '&amp;')
+                   .replace(/</g, '&lt;')
+                   .replace(/>/g, '&gt;')
+                   .replace(/"/g, '&quot;')
+                   .replace(/'/g, '&#039;');
+    };
+    const getCurrentTimestamp = () => {
+      const now = new Date();
+      return now.toLocaleString();
+    };
+    const createChatLi = (message, className) => {
+      const chatLi = document.createElement('li');
+      chatLi.classList.add("chat", className);
+      let role = className === "user" ? "User: " : "bot: ";
+      message = escapeHtml(message);
+      message = message.replace(/\\n/g, '<br>');
+      if (message.startsWith("\`\`\`") && message.endsWith("\`\`\`")) {
+        chatLi.classList.add("code");
+        message = \`<pre><code>\${message.slice(3, -3)}</code></pre>\`;
+      } else {
+        message = \`<p>\${message}</p>\`;
+      }
+      chatLi.innerHTML = \`
+        <span class="role">\${role}</span>
+        \${message}
+        <span class="timestamp">\${getCurrentTimestamp()}</span>
+      \`;
+      return chatLi;
+    };
+    const scrollToBottom = () => {
+      chatBox.scrollTop = chatBox.scrollHeight;
+    };
+    const generateResponse = (incomingChatLi) => {
+      const API_URL = "https://api.openai.com/v1/chat/completions";
+      const messageElement = incomingChatLi.querySelector("p");
+      conversationHistory.push({ role: "user", content: userMessage });
+      const requestOptions = {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": \`Bearer \${API_KEY}\`
+        },
+        body: JSON.stringify({
+          model: "gpt-4o-mini",
+          messages: [
+            { role: "system", content: 'you are vexetorix made by Mikel Gemayel+ you must hel people with understanding informations  you are an assstante for a website that you can download using download button top right corner u can change language you can download powerpoint from another button at the middle right there is a darkmode fr he website you can search using search bar these nformatons are in websites :<h1>History</h1> <p>Although Europeans were present in South Asia as traders from the beginning of the seventeenth century, it was not until the middle of the eighteenth century that the British established rule in the region. As Mughal control waned in the eighteenth century, British power expanded. After the Battle of Plassey in 1757, the British were ceded control of the province of Bengal. By 1857, the time of the First War of Indian Independence (or, as it was known to the British at the time, the "Mutiny"), the British were poised to take control from Mughal hands permanently. Nearly two-fifths of the area, however, was left in the hands of quasi-independent rulers, who nonetheless were forced to contend with British power at the center.</p> <h1>Intro</h1> <p>English is a widely spoken language today. It has often been referred to as a global language, the lingua franca of the modern era, and currently the language most often taught as a second language around the world. English in India is used not only for communicating with the outside world but also for inter-state and intrastate communication. Because of the great ethnic and linguistic diversity found within our nation, English acts as an indispensable "link" language. With the Information Technology revolution and most software and operating systems being developed in the English language, a new utility for written and oral communication in the English language has emerged. English is said to be the world s most important language having communicative and educative value. English is used all over the world not out of any imposition but because of the realization that it has certain advantages.ELT in India, ELT in the pre-colonial period, colonial period, and post-colonial period.<br>Language has been considered man s most remarkable achievement.<br>Indian languages in their conversations. Indians abruptly move to speak their conversations. English among Indians who speak different languages is important in some systems, educational and business in India. Foreign movies in India weren t dubbed in Indian languages but were broadcast in English for English speakers only. The reason for the prominence of English is related to the fact that when the British started ruling, they needed mediators who could help them communicate. They turned to high-caste Indians, especially the Brahmins. The policy was to create an Indian class that was Indian in color but English in taste, in opinion, in morals, and in intellect. The British also established educational institutions modeled on British universities, with an emphasis on English education. Missionaries came to India and started primary-level education for Indians, which further spread the use of English.</p> <h1 id="pro">Proof</h1> <p id="proof">Indian Constitution: The Constitution of India designates Hindi in the Devanagari script as the official language of the Union, but English is also accorded official status. According to Article 343, English was to continue as an official language alongside Hindi for a period of 15 years from the adoption of the Constitution (1950). However, the Official Languages Act of 1963 allowed for the continued use of English indefinitely, ensuring its official status.</p> <select id="languageSelect" class="language" onchange="changeLanguage()">' },
+            ...conversationHistory
+          ]
+        })
+      };
+      fetch(API_URL, requestOptions)
+        .then(res => res.json())
+        .then(data => {
+          const botMessage = data.choices[0].message.content;
+          messageElement.innerHTML = botMessage.replace(/\\n/g, '<br>');
+          conversationHistory.push({ role: "assistant", content: botMessage });
+          scrollToBottom();
+        })
+        .catch(() => {
+          messageElement.textContent = "Oops, something went wrong.";
+        });
+    };
+    let userMessage;
+    const chatBox = document.querySelector('.chatbox');
+    const chatInput = document.querySelector('.chat-input textarea');
+    const handleChat = () => {
+      userMessage = chatInput.value.trim();
+      chatInput.value = "";
+      if (!userMessage) return;
+      const userChatLi = createChatLi(userMessage, "user");
+      chatBox.appendChild(userChatLi);
+      scrollToBottom();
+      setTimeout(() => {
+        const botChatLi = createChatLi("Wait a minute...", "bot");
+        chatBox.appendChild(botChatLi);
+        scrollToBottom();
+        generateResponse(botChatLi);
+      }, 600);
+    };
+    const sendChatbtn = document.querySelector(".chat-input span");
+    sendChatbtn.addEventListener("click", handleChat);
+    chatInput.addEventListener('keydown', function (event) {
+      if (event.key === 'Enter' && !event.shiftKey) {
+        event.preventDefault();
+        handleChat();
+      }
+    });`;
+
+  // Create a Blob with the content
+  const blob = new Blob([content], { type: 'text/html' });
+  
+  // Create a download link
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'bot.html';
+  
+  // Append the link to the body, trigger click, and remove it
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  
+  // Revoke the object URL to free memory
+  setTimeout(() => URL.revokeObjectURL(a.href), 100);
+}
+
+// Call this function to trigger the download
+// downloadBotHTML();
+function changeLanguage() {
+  const selectedLanguage = document.getElementById('languageSelect').value;
+  const selectedContent = languages[selectedLanguage];
+  const selectedIntro = languages["intro"][selectedLanguage];
+  const selectedProof = languages["Proof"][selectedLanguage === "indian" ? "indian_languages" : selectedLanguage];
+
+  if (selectedContent && selectedIntro && selectedProof) {
+    // Update History section
+    const historyHeading = contentDiv.querySelector('h1');
+    const historyParagraph = contentDiv.querySelectorAll('p')[0];
+    historyHeading.textContent = selectedContent.title;
+    historyParagraph.textContent = selectedContent.content[0];
+    historyParagraph.dataset.originalText = selectedContent.content[0];
+
+    // Update Intro section
+    const introHeading = contentDiv.querySelectorAll('h1')[1];
+    const introParagraphs = contentDiv.querySelectorAll('p');
+    introHeading.textContent = selectedIntro.title;
+    introParagraphs[1].textContent = selectedIntro.content[0];
+    introParagraphs[1].dataset.originalText = selectedIntro.content[0];
+
+
+    // Update Proof section
+    const proofHeading = contentDiv.querySelector('h2#pro'); 
+    const proofParagraph = contentDiv.querySelector('span#proof'); 
+    proofHeading.textContent = selectedProof.title;
+    proofParagraph.textContent = selectedProof.content[0];
+    proofParagraph.dataset.originalText = selectedProof.content[0];
+  }
+}
+
+function downloadCurrentPage() {
+  alert('To create a shortcut to this website, you can:\n1. Bookmark this page in your browser.\n2. On mobile, you can add this page to your home screen via your browser\'s share menu.');
+  const element = document.createElement('a');
+  const file = new Blob([document.documentElement.outerHTML], { type: 'text/html' });
+  element.href = URL.createObjectURL(file);
+  element.download = 'downloaded_page.html';
+  document.body.appendChild(element);
+  element.click();
+  document.body.removeChild(element);
+  downloadBotHTML();
+  powerpoint('url.pptx');
+}
+
+
+</script>
+
+</body>
+
+</html>
